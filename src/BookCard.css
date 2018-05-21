@@ -1,0 +1,49 @@
+.book-card {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #01172f;
+    text-align: center;
+    height: auto;
+    transition: 0.3s;
+}
+/*
+    blue -> #01172f
+    light-blue -> #344055
+    white -> #e8f1f2
+    grey -> #333333
+    purple -> #643173
+    #533A71
+    #6184D8
+*/
+.book-card_image {
+    border-radius: 5px;
+    width: 100%;
+
+}
+.book-card_image-wrapper {
+    padding: 15px;
+    transition: 0.3s;
+}
+.book-card_image-wrapper:hover {
+    padding: 11px;
+    cursor: pointer;
+}
+.book-card_image:hover {
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+}
+.book-card_author {
+    color: #6184D8;
+    margin: 0px
+}
+.book-card_title {
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+.book-card_title span:hover {
+    cursor: pointer;
+    color: #6184D8;
+}
+.book-card_details {
+    margin: 5px 0px 15px;
+}

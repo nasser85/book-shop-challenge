@@ -1,0 +1,22 @@
+.header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: #344055;
+    color: #e8f1f2;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+}
+.search-icon {
+    float: left;
+}
+.pagination, .home {
+    float: right;
+}
+.prev:hover, .next:hover {
+    cursor: pointer;
+    color: #6184D8;
+}
+.hide {
+    display: none;
+}

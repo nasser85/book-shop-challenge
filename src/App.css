@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Roboto+Condensed');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #e8f1f2;
+    margin: 0px;
+}
+.app {
+    margin: 0;
+}
