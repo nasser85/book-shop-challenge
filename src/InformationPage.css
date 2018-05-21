@@ -30,3 +30,12 @@
     font-family: 'Roboto Condensed', sans-serif;
     padding: 15px;
 }
+.content-header {
+    text-align: center;
+    padding: 10px;
+}
+.content-footer {
+    text-align: center;
+    padding: 10px;
+
+}

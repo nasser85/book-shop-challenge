@@ -26,7 +26,7 @@ const schema = buildSchema(`
     }
     type Query {
         getBooks(page: Int = 1, active: Boolean = false): [Book]
-        searchBooks(search: String!): [Book]
+        searchBooks(search: String): [Book]
     }
 `)
 

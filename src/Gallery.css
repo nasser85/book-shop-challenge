@@ -20,3 +20,12 @@
       grid-template-columns: auto auto auto auto;
     }
 }
+.error-container {
+  background-color: #e8f1f2;
+  padding: 60px 10px 40px 10px;
+}
+.error-message {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #01172f;
+}

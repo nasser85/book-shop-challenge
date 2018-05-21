@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
 
 const rawData = JSON.parse(fs.readFileSync('./books-test-collection.json', 'utf8'));
 const inStock = rawData.filter(el=>el.active);
+const prodLength = rawData.length;
 const root = {
     getBooks: (data) => {
         let start = data.page*10 - 10;
@@ -26,7 +27,17 @@ const root = {
     },
     searchBooks: (data) => {
         let query = data.search.toLowerCase();
-        return rawData.filter(el=>el.title.toLowerCase().indexOf(query) != -1).splice(0,10);
+
+        var res = [];
+        for (var i = 0; i < prodLength; i++) {
+            if (rawData[i].title.toLowerCase().indexOf(query) != -1) {
+                res.push(rawData[i]);
+            }
+            if (res.length >= 10) {
+                break;
+            }
+        }
+        return res;
     }
 }
 
@@ -39,5 +50,5 @@ app.use('/api', graphqlHTTP({
 }))
 
 app.listen(8000, () => {
-    console.log('server started');
+    console.log('server up n running on port 8000!');
 })

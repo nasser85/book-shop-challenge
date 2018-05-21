@@ -6,6 +6,7 @@
     color: #e8f1f2;
     font-size: 1.5rem;
     padding: 10px 15px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .search-icon {
     float: left;
@@ -13,7 +14,7 @@
 .pagination, .home {
     float: right;
 }
-.prev:hover, .next:hover {
+.prev:hover, .next:hover, .home:hover, .search-icon:hover {
     cursor: pointer;
     color: #6184D8;
 }
